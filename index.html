@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Puja Patel Portfolio</title>
+    <title>Cashly Website</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -11,21 +11,50 @@
     />
     <script src="particles/particles.min.js"></script>
     <script src="particles/particles.js"></script>
+    <style>
+      #backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        background: linear-gradient(to right, #4a8cff, #1e6cff);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      #backToTop:hover {
+        opacity: 0.8;
+      }
+    </style>
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav>
-      <div class="logo">Cashly</div>
+      <div class="logo">
+        <img class="nav-logo" src="./images/logo.png" alt="Cashly Logo" />
+      </div>
       <div class="hamburger">&#9776;</div>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#usecases">Use Cases</a></li>
-        <li><a href="#contact-me">Contact Us</a></li>
+        <li>
+          <a href="#products">Products</a>
+        </li>
+        <li>
+          <a href="features.html">Features</a>
+        </li>
+        <li>
+          <a href="#contact-me">Contact Us</a>
+        </li>
       </ul>
     </nav>
+
+    <div id="content"></div>
 
     <!-- Home Section -->
     <section id="home">
@@ -38,10 +67,11 @@
             <h2 class="sliding-text">CLOSE MORE DEALS</h2>
           </div>
           <h3 class="home-desc">
-           smoll description 
+            Empowering Mortgage Brokers with AI-Powered Automation and
+            Performance Insights
           </h3>
           <h3 class="home-desc pink">
-            Small headline 
+            Mortgage Operations AI | Automated CRM | SMS Autopilot
           </h3>
 
           <div class="home-buttons">
@@ -50,30 +80,24 @@
             >
               Get Demo
             </button>
-            <a href="images/" target="_blank"
-              ><button>Download Features</button></a
-            >
+            <a href="images/" target="_blank"><button>View More</button></a>
           </div>
         </div>
         <img src="./images/logo.png" alt="Cashly Logo" />
-        Cashly Logo
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-      <h2 class="float-up">Out Story</h2>
+      <h2 class="float-up">Our Story</h2>
       <div class="content float-up">
         <img src="./images/about.png" alt="About Image" />
-        <p>
-          image of app screenshot 
-        </p>
+        <p>image of app screenshot</p>
       </div>
     </section>
-    <!-- Projects Section -->
-    <section id="projects">
+    <!-- Products Section -->
+    <section id="products">
       <h2 class="float-up">Our Products</h2>
-
       <!-- Container for Cards -->
       <div class="card-container float-up">
         <!-- Card 1 -->
@@ -82,32 +106,33 @@
             <div class="card-inner">
               <div class="card-front">
                 <div class="card-image">
-                  <img src="./images/projects/aurora.jpg" alt="Project 1" />
+                  <img src="./images/projects/aurora.jpg" alt="Product 1" />
                 </div>
-                <h3>Aurora's Ascendant</h3>
+                <h3>Mortgage AI</h3>
                 <div class="card-tech-stack">
-                  <p>C#, Unity, Store Assets</p>
+                  <p>
+                    Your Personal AI Assistant for precision lender matching
+                  </p>
                 </div>
               </div>
               <div class="card-back">
                 <div class="card-description">
                   <p>
-                    I built an RPG game in Unity using C# that immerses players
-                    in an open world with dynamic lighting, advanced AI, and
-                    melee combat. Players explore, battle enemies, and collect
-                    items to uncover the fate of Earth. I implemented a
-                    first-person controller and integrated high-quality assets
-                    from Unity’s store, enhancing the game's atmosphere. This
-                    project showcases my skills in game development, AI, C#
-                    programming, and using Unity to create an engaging
-                    experience.
+                    Mortgage AI analyzes borrower profiles—credit scores,
+                    location, LTV, document requirements, and lender-specific
+                    terms—to instantly connect clients with ideal lenders from
+                    your database. No more manual searches: it cross-references
+                    real-time CRM data with lender criteria, ensuring compliant,
+                    tailored matches that save hours and reduce fall-through
+                    rates.
                   </p>
                   <a
-                    href="https://drive.google.com/drive/folders/1kbKa5ZixOvRkCimDKUalkieAwxHteE4f?usp=sharing"
+                    href=" "
+                    onclick="loadPage('features.html')"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View Project Files
+                    See Features
                   </a>
                 </div>
               </div>
@@ -120,29 +145,30 @@
             <div class="card-inner">
               <div class="card-front">
                 <div class="card-image">
-                  <img src="./images/projects/arecipe.png" alt="Project 1" />
+                  <img src="./images/projects/arecipe.png" alt="Product  1" />
                 </div>
-                <h3>ARecipe</h3>
+                <h3>Mortgage Automations</h3>
                 <div class="card-tech-stack">
-                  <p>Angular, MongoDB, Node.js</p>
+                  <p>Turn repetitive tasks into one-click actions</p>
                 </div>
               </div>
               <div class="card-back">
                 <div class="card-description">
                   <p>
-                    ARecipe is a mobile app designed to help college students
-                    discover recipes based on available ingredients, reduce food
-                    waste, and learn to cook interactively. I collaborated with
-                    a team of 6 to develop this application using Angular,
-                    MongoDB, and Node.js, contributing to both the front-end and
-                    back-end to create a seamless, user-friendly experience.
+                    Automatically update CRM fields, assign leads, trigger email
+                    sequences, or generate follow-up tasks from call
+                    transcripts—all without manual effort. Sync with Gmail to
+                    label emails, extract borrower data, and sync attachments
+                    with the Document Portal. Focus on closing deals while the
+                    system handles the busywork.
                   </p>
                   <a
-                    href="https://github.com/UnderCooked4450/ARecipeBook"
+                    href=" "
+                    onclick="loadPage('features.html')"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View on GitHub
+                    See Features
                   </a>
                 </div>
               </div>
@@ -156,30 +182,33 @@
             <div class="card-inner">
               <div class="card-front">
                 <div class="card-image">
-                  <img src="./images/about.png" alt="Project 1" />
+                  <img src="./images/about.png" alt="Product 1" />
                 </div>
-                <h3>Portfolio</h3>
+                <h3>Cashy CRM</h3>
                 <div class="card-tech-stack">
-                  <p>HTML, CSS, JavaScript</p>
+                  <p>
+                    Centralize leads, communications, and documents in one
+                    platform
+                  </p>
                 </div>
               </div>
               <div class="card-back">
                 <div class="card-description">
-                  <p>
-                    My portfolio website, built from the ground up using pure
-                    HTML, CSS, and JavaScript, showcases my skills in front-end
-                    development without relying on any frameworks. The site
-                    features a fully responsive, sleek design that offers a
-                    seamless user experience, demonstrating my ability to craft
-                    clean, efficient code while ensuring modern functionality
-                    across all devices.
+                  <p class="desc">
+                    Sync social media leads and Gmail interactions seamlessly,
+                    while AI SMS Autopilot qualifies inbound leads and books
+                    appointments 24/7. The Automated Document Portal parses
+                    synced files to auto-fill CRM fields and documents, and
+                    direct integrations with major deal origination systems keep
+                    your pipeline moving. Less chasing, more closing.
                   </p>
                   <a
-                    href="https://github.com/ppate343/portfolio.github.io"
+                    href=" "
+                    onclick="loadPage('features.html')"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View on GitHub
+                    See Features
                   </a>
                 </div>
               </div>
@@ -188,341 +217,57 @@
         </div>
       </div>
     </section>
- <!-- Experience Section -->
- <section id="roadmap">
-  <h2 class="float-up"></h2>
-  
-</section>
+
     <!-- Skills Section -->
-    <section id="skills">
-      <h2 class="float-up">Use Cases</h2>
+    <section id="team">
+      <h2 class="float-up">Meet the Team!</h2>
+      <!-- Large Team Photo -->
+      <img src="team-large.jpg" alt="Team Group Photo" class="team-photo" />
 
-      <div class="tabs float-up">
-        <button class="tablinks" data-category="frontend">Frontend</button>
-        <button class="tablinks" data-category="backend">Backend</button>
-        <button class="tablinks" data-category="cloud">Cloud</button>
-        <button class="tablinks" data-category="ml">LLM AI/ML</button>
-        <button class="tablinks" data-category="product">Product UI/UX</button>
-        <button class="tablinks" data-category="database">Database</button>
-        <button class="tablinks" data-category="other">Other</button>
-        <div class="tabs-line"></div>
-      </div>
-
-      <!-- Tab Content -->
-      <!-- frontend -->
-      <div id="frontend" class="tabcontent float-up">
-        <h3>Frameworks</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/react.png" alt="React" />
-            </div>
-            <div class="skill-description">
-              <p>React</p>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/angular.png" alt="Angular" />
-            </div>
-            <div class="skill-description">
-              <p>Angular</p>
-            </div>
-          </div>
+      <div class="team-container">
+        <div class="team-member">
+          <img src="team1.jpg" alt="Team Member 1" />
+          <h3>Pavit Paul</h3>
+          <p>CEO</p>
         </div>
-        <h3>Languages</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/html.png" alt="HTML" />
-            </div>
-            <div class="skill-description">
-              <p>HTML</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/css.png" alt="CSS" />
-            </div>
-            <div class="skill-description">
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/js.png" alt="JavaScript" />
-            </div>
-            <div class="skill-description">
-              <p>JavaScript</p>
-            </div>
-          </div>
+        <div class="team-member">
+          <img src="team2.jpg" alt="Team Member 2" />
+          <h3>Vladimir Belsch</h3>
+          <p>CTO</p>
         </div>
-      </div>
-      <!-- backend -->
-      <div id="backend" class="tabcontent">
-        <h3>Frameworks</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/express.png" alt="Express" />
-            </div>
-            <div class="skill-description">
-              <p>Express.js</p>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/node.png" alt="Node" />
-            </div>
-            <div class="skill-description">
-              <p>Node.js</p>
-            </div>
-          </div>
+        <div class="team-member">
+          <img src="team3.jpg" alt="Team Member 3" />
+          <h3>Puja Patel</h3>
+          <p>Product Manager</p>
         </div>
-        <h3>Languages</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/sql.png" alt="SQL" />
-            </div>
-            <div class="skill-description">
-              <p>SQL</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/python.png" alt="Python" />
-            </div>
-            <div class="skill-description">
-              <p>Python</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/js.png" alt="JavaScript" />
-            </div>
-            <div class="skill-description">
-              <p>JavaScript</p>
-            </div>
-          </div>
+        <div class="team-member">
+          <img src="team3.jpg" alt="Team Member 3" />
+          <h3>Manav Patel</h3>
+          <p>Software Engineer ||</p>
         </div>
-      </div>
-      <!-- cloud -->
-      <div id="cloud" class="tabcontent">
-        <h3>Amazon Web Services</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/iam.png" alt="IAM" />
-            </div>
-            <div class="skill-description">
-              <p>IAM Roles</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/ec2.png" alt="EC2" />
-            </div>
-            <div class="skill-description">
-              <p>Elastic Cloud</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/s3.png" alt="S3" />
-            </div>
-            <div class="skill-description">
-              <p>S3</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/security.png" alt="Security" />
-            </div>
-            <div class="skill-description">
-              <p>Security</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- AI/ML -->
-      <div id="ml" class="tabcontent">
-        <h3>Frameworks</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/sklearn.png" alt="ScikitLearn" />
-            </div>
-            <div class="skill-description">
-              <p>Scikit learn</p>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/numpy.png" alt="Numpy" />
-            </div>
-            <div class="skill-description">
-              <p>Numpy</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/matplot.png" alt="Matplotlib" />
-            </div>
-            <div class="skill-description">
-              <p>Matplotlib</p>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/pandas.png" alt="Pandas" />
-            </div>
-            <div class="skill-description">
-              <p>Pandas</p>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/seaborn.png" alt="Seaborn" />
-            </div>
-            <div class="skill-description">
-              <p>Seaborn</p>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/langchain.png" alt="Seaborn" />
-            </div>
-            <div class="skill-description">
-              <p>Langchain</p>
-            </div>
-          </div>
-        </div>
-        <h3>Languages & APIs</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/python.png" alt="Python" />
-            </div>
-            <div class="skill-description">
-              <p>Python</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/openai.jpg" alt="Python" />
-            </div>
-            <div class="skill-description">
-              <p>OpenAI</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- product management -->
-      <div id="product" class="tabcontent">
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/jira.png" alt="Jira" />
-            </div>
-            <div class="skill-description">
-              <p>Jira</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/confluence.png" alt="Confluence" />
-            </div>
-            <div class="skill-description">
-              <p>Confluence</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/figma.png" alt="Figma" />
-            </div>
-            <div class="skill-description">
-              <p>Figma</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/salesforce.png" alt="Salesforce" />
-            </div>
-            <div class="skill-description">
-              <p>Salesforce</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- database -->
-      <div id="database" class="tabcontent">
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/mysql.png" alt="mysql" />
-            </div>
-            <div class="skill-description">
-              <p>MySQL</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/mongo.png" alt="mongo" />
-            </div>
-            <div class="skill-description">
-              <p>MongoDB</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/postgres.png" alt="postgres" />
-            </div>
-            <div class="skill-description">
-              <p>Postgres</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- other -->
-      <div id="other" class="tabcontent">
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/ssh.png" alt="ssh" />
-            </div>
-            <div class="skill-description">
-              <p>SSH</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/linux.png" alt="linux" />
-            </div>
-            <div class="skill-description">
-              <p>linux</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/git.png" alt="Git" />
-            </div>
-            <div class="skill-description">
-              <p>Git</p>
-            </div>
-          </div>
+        <div class="team-member">
+          <img src="team3.jpg" alt="Team Member 3" />
+          <h3>Shrey Patel</h3>
+          <p>Software Engineer |</p>
         </div>
       </div>
 
-      <div class="non-technical float-up">
-        <h4>Customer Success Stories</h4>
-        
+      <h2 class="customer-success float-up">Customer Testimonials</h2>
+      <div class="testimonial-wrapper">
+        <div class="testimonial-container">
+          <div class="testimonial-item">
+            <img src="logo1.png" alt="Logo 1" class="testimonial-logo" />
+            <p class="testimonial-quote">"Great service!"</p>
+          </div>
+          <div class="testimonial-item">
+            <img src="logo2.png" alt="Logo 2" class="testimonial-logo" />
+            <p class="testimonial-quote">"Excellent product!"</p>
+          </div>
+          <div class="testimonial-item">
+            <img src="logo3.png" alt="Logo 3" class="testimonial-logo" />
+            <p class="testimonial-quote">"Would recommend to anyone!"</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -565,7 +310,7 @@
         >
           <i class="fab fa-linkedin"></i>
         </a>
-      
+
         <a href="gocashly.io" class="icon email">
           <i class="fas fa-envelope"></i>
         </a>
@@ -579,4 +324,20 @@
     <script src="index.js"></script>
     <script src="particles.js"></script>
   </body>
+  <button id="backToTop">↑ Back to Top</button>
+  <script>
+    const backToTopButton = document.getElementById("backToTop");
+
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 300) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+
+    backToTopButton.onclick = function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
 </html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features Page</title>
+    <link rel="stylesheet" href="features.css" />
+    <style>
+      #backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        background: linear-gradient(to right, #4a8cff, #1e6cff);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      #backToTop:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Cashly</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Get Demo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero mortgage-ai " id="ai">
+      <h1 class="float-up">Mortgage AI</h1>
+      <p class="float-up">
+        Overview of our key features, that makes us your next
+        <span >marketing</span> partner.
+      </p>
+    </section>
+
+    <section class="features float-up">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <div class="feature-box">
+          <img src="icon1.png" alt="Import and Export" />
+          <h3>Import and Export templates</h3>
+          <p>You can share your newsletter templates...</p>
+        </div>
+        <div class="feature-box">
+          <img src="icon2.png" alt="Preview campaigns" />
+          <h3>Preview campaigns</h3>
+          <p>Preview your campaigns on various devices...</p>
+        </div>
+        <div class="feature-box">
+          <img src="icon3.png" alt="Schedule campaigns" />
+          <h3>Schedule campaigns</h3>
+          <p>Send your campaign instantly...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero automations float-up" id="automations">
+      <h1>Mortgage Automations</h1>
+      <p>
+        Overview of our key features, that makes us your next
+        <span >marketing</span> partner.
+      </p>
+    </section>
+    <section class="features float-up">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <div class="feature-box">
+          <img src="icon1.png" alt="Import and Export" />
+          <h3>Import and Export templates</h3>
+          <p>You can share your newsletter templates...</p>
+        </div>
+        <div class="feature-box">
+          <img src="icon2.png" alt="Preview campaigns" />
+          <h3>Preview campaigns</h3>
+          <p>Preview your campaigns on various devices...</p>
+        </div>
+        <div class="feature-box">
+          <img src="icon3.png" alt="Schedule campaigns" />
+          <h3>Schedule campaigns</h3>
+          <p>Send your campaign instantly...</p>
+        </div>
+      </div>
+    </section>
+    <section class="hero cashly-crm float-up" id="crm">
+      <h1>CASHLY CRM</h1>
+      <p>
+        Overview of our key features, that makes us your next
+        <span >marketing</span> partner.
+      </p>
+    </section>
+    <section class="features float-up">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <div class="feature-box">
+          <img src="icon1.png" alt="Import and Export" />
+          <h3>Import and Export templates</h3>
+          <p>You can share your newsletter templates...</p>
+        </div>
+        <div class="feature-box">
+          <img src="icon2.png" alt="Preview campaigns" />
+          <h3>Preview campaigns</h3>
+          <p>Preview your campaigns on various devices...</p>
+        </div>
+        <div class="feature-box">
+          <img src="icon3.png" alt="Schedule campaigns" />
+          <h3>Schedule campaigns</h3>
+          <p>Send your campaign instantly...</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-content">
+      <p>&copy; 2025 CASHLY. ALL RIGHTS RESERVED.</p>
+    </footer>
+  </body>
+  <button id="backToTop">↑ Back to Top</button>
+  <script>
+    const backToTopButton = document.getElementById("backToTop");
+
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 300) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+
+    backToTopButton.onclick = function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    const elementsToAnimate = document.querySelectorAll(".float-up");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          } else {
+            entry.target.classList.remove("in-view");
+          }
+        });
+      },
+      {
+        threshold: 0.2, // Triggesr when 20% of the element is visible
+      }
+    );
+
+    elementsToAnimate.forEach((element) => observer.observe(element));
+  </script>
+</html>

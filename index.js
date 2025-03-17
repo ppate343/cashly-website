@@ -122,6 +122,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
+
+    
+
     /*****************CONTACT FORM ***********************/
     const form = document.getElementById('contactForm');
     const formMessage = document.getElementById('formMessage');

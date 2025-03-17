@@ -1,24 +1,23 @@
 /* General Styles */
 body {
   margin: 0;
-  margin-top: 20px;
+
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  background-color: black;
-  overflow-y: scroll; 
-  overflow-x: hidden; 
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 html {
-  overflow-x: hidden; 
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Navigation Bar */
@@ -34,10 +33,13 @@ nav {
   padding: 10px 20px;
   z-index: 1000;
   box-sizing: border-box;
-  overflow: hidden; 
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.nav-logo {
+  width: 100px;
+  height: 100px;
+}
 nav .logo {
   font-size: 15px;
   color: blue;
@@ -63,7 +65,7 @@ nav ul li a:hover {
 }
 
 nav ul li a:active {
-  color: rgb(96, 166, 189); 
+  color: rgb(96, 166, 189);
 }
 
 .hamburger {
@@ -84,18 +86,19 @@ nav ul li a:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    right: -100%; 
-    height: 100vh; 
+    right: -100%;
+    height: 100vh;
     width: 61%;
-    background: white;
+    background-color: #000000;
+    opacity: 0.95;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: right 0.5s ease-in-out;
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     box-sizing: border-box; /* Ensures padding doesn't affect width/height */
-    overflow-y: auto; 
+    overflow-y: auto;
   }
 
   /* Active Class for Sliding Effect */
@@ -143,7 +146,6 @@ nav ul li a:active {
   align-items: center;
   position: relative;
   text-align: left;
-
 }
 
 .home-content {
@@ -155,8 +157,8 @@ nav ul li a:active {
   margin: 0 auto;
   min-height: 100vh;
   text-align: center;
+  color: white;
 }
-
 
 .left {
   display: flex;
@@ -185,7 +187,7 @@ nav ul li a:active {
   text-shadow: 0px 15px 5px rgba(255, 255, 255, 0),
     10px 20px 5px rgba(255, 255, 255, 0.139),
     -10px 20px 5px rgba(255, 255, 255, 0);
-  color: blue;
+  color: white;
   position: absolute;
   opacity: 0;
   transform: translateX(-100%);
@@ -241,7 +243,7 @@ nav ul li a:active {
 }
 
 .pink {
-  color: blue;
+  color: white;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5vw;
@@ -271,14 +273,16 @@ nav ul li a:active {
   padding: clamp(8px, 1.5vw, 12px) clamp(15px, 3vw, 30px); /* Reduced padding */
   border: none;
   border-radius: 12px;
-  background-color: blue;
+  background-color: white;
+  opacity: 0.8;
   color: BLACK;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .home-buttons button:hover {
-  background-color: white;
+  background-color: blue;
+  color: white;
   transform: scale(1.05);
 }
 
@@ -288,17 +292,18 @@ nav ul li a:active {
   object-fit: contain;
   border: 6px solid transparent;
   background-color: white;
-
-
+  opacity: 0.6;
+  border-radius: 50%;
   padding: 6px;
   box-sizing: border-box;
-  box-shadow: 0 10px 30px rgba(19, 55, 255, 0.562);
+  box-shadow: 0 30px 50px rgba(19, 55, 255, 0.562);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home-content img:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  opacity: 0.95;
 }
 
 @media screen and (max-width: 768px) {
@@ -402,6 +407,7 @@ nav ul li a:active {
   line-height: 1.6;
   max-width: 50vw;
   text-align: left;
+  color: blue;
 }
 
 /* Strong Text Highlight */
@@ -599,23 +605,22 @@ nav ul li a:active {
   }
 }
 
-/* Projects Section */
+/* Products Section */
 
-#projects {
-  
+#products {
   color: blue;
   padding: 50px 20px;
   text-align: center;
   background-color: white;
 }
 
-#projects h2 {
+#products h2 {
   font-size: 36px;
   margin-bottom: 20px;
   color: blue;
 }
 
-#projects .content {
+#products .content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -640,11 +645,10 @@ nav ul li a:active {
 
 .card {
   width: 100%;
-  max-width: 380px;
+  max-width: 500px;
   height: 450px;
   perspective: 1000px; /* Create a 3D space for the flip */
   background-color: white;
-  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.301); /* Subtle shadow */
   overflow: hidden;
   transition: all 0.3s ease-in-out;
@@ -703,7 +707,7 @@ nav ul li a:active {
 
 .card-tech-stack p {
   font-style: italic;
-  font-size: 18px;
+  font-size: 30px;
   color: blue;
   margin: 10px 0;
 }
@@ -729,16 +733,16 @@ nav ul li a:active {
   transform: rotateY(180deg); /* Make the back start rotated */
 }
 
-.card-description {
+.card-description p {
   padding: 10px;
-  font-size: 14px;
-  color: white;
+  font-size: 50px;
+  color: black;
 }
 
 .card-description a {
   color: #007bff;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 20px;
   display: inline-block;
   font-size: 14px;
 }
@@ -752,7 +756,7 @@ nav ul li a:active {
 
 .card-description p {
   margin-top: 10%;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   line-height: 1.4;
   margin-bottom: 10px;
@@ -774,175 +778,141 @@ nav ul li a:active {
   }
 }
 
-/* Skills Section */
+/* Team/Customers Section */
 
-#skills {
+#team {
   background-color: white;
   color: blue;
   padding: 50px 20px;
   text-align: center;
 }
 
-#skills h2 {
+#team h2 {
   font-size: 36px;
   margin-bottom: 20px;
 }
 
-/* Tabs Styling */
-/* Tabs Styling */
-.tabs {
-  padding-top: 5%;
-  display: flex;
-  justify-content: center;
+/* Large Team Photo */
+.team-photo {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
   margin-bottom: 30px;
-  overflow: hidden;
-  position: relative;
-  flex-wrap: wrap;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Tab links (buttons) styling */
-.tablinks {
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 0;
-  font-size: 17px;
-  font-weight: normal;
-  color: grey;
-  text-align: center;
-  transition: color 0.3s, transform 0.3s;
-  margin: 0 15px;
-}
-
-/* Hover effect for tab links */
-.tablinks:hover {
-  color: blue;
-  transform: scale(1.05);
-}
-
-/* Active tab link styling */
-.tablinks.active {
-  color: blue;
-  font-weight: bold;
-}
-
-/* The line under the active tab */
-.tabs-line {
-  position: absolute;
-  height: 2px;
-  background-color: blue;
-  bottom: 0;
-  transition: left 0.2s ease, width 0.2s ease;
-  width: 0; /* Set initial width to 0 */
-  left: 0; /* Set initial position to the left */
-}
-
-/* Make the tabs responsive */
-@media (max-width: 768px) {
-  .tabs {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .tablinks {
-    padding: 12px 20px;
-    width: 100%;
-    margin: 5px 0;
-  }
-
-  .tabs-line {
-    width: 100%; /* Make line full width when tabs are stacked */
-    left: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .tablinks {
-    font-size: 15px;
-  }
-}
-
-/* Skills Cards */
-
-.skills-row {
-  display: flex;
+/* Team Grid (2x2 Layout) */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.skill-card {
-  width: 125px;
-  height: 150px;
-  margin: 10px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.skill-card:hover {
-  transform: rotate(5deg);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.skill-icon {
-  height: 60%;
-  padding: 2%;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-}
-
-.skill-icon img {
-  width: 90%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.skill-icon img:hover {
-  transform: scale(1.1); /* Slight zoom-in effect on hover */
-}
-
-.skill-description {
-  padding: 5%;
+/* Individual Team Member */
+.team-member {
+  background: #f8f8f8;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
   text-align: center;
-  padding-bottom: 10%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Non-Technical Skills */
-.non-technical {
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .team-container {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Stack members vertically on mobile */
+  }
+
+  .team-member {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+#customers {
   background-color: white;
-  padding: 2%;
-  max-width: 100%; 
-  margin: 20px auto; 
+  color: blue;
+  padding: 50px 20px;
+  text-align: center;
 }
 
-
-.non-technical h4 {
-  font-size: 2.5vh; 
-  color: blue; 
-  margin-bottom: 2%; 
+.customer-success h4 {
+  font-size: 2.5vh;
+  color: blue;
+  margin-bottom: 2%;
   font-weight: bold;
-  text-transform: uppercase; 
-  letter-spacing: 1px; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.non-technical ul {
-  list-style: none; 
-  padding: 0; 
+.testimonial-wrapper {
+  width: 100%;
+  overflow: hidden; /* Hide items that are outside of the container */
 }
 
-.non-technical li {
-  font-size: 2.5vh;  
-  color: rgba(255, 255, 255, 0.781); 
-  margin: 10px; 
+.testimonial-container {
+  display: flex;
+  animation: slide-right 15s linear infinite; /* Controls the sliding effect */
 }
 
+.testimonial-item {
+  display: flex;
+  align-items: center;
+  margin-right: 50px; /* Space between testimonial items */
+  min-width: 300px;
+  justify-content: flex-start;
+}
+
+.testimonial-logo {
+  width: 40px; /* Set size for logo */
+  margin-right: 20px; /* Space between logo and quote */
+}
+
+.testimonial-quote {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* Animation to move items from left to right and loop seamlessly */
+@keyframes slide-right {
+  0% {
+    transform: translateX(0); /* Start on screen */
+  }
+  33.33% {
+    transform: translateX(-33.33%); /* First item moves out */
+  }
+  66.66% {
+    transform: translateX(-66.66%); /* Second item moves out */
+  }
+  100% {
+    transform: translateX(-100%); /* All items off-screen */
+  }
+}
 
 
 /* Contact Me Section */

@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    background-color: #0d0d0d;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .nav-logo {
+      width: 100px;
+      height: 100px;
+    }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+/* Section Container */
+.blog-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Title Styling */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section-title span {
+    color: #4a8cff;
+}
+
+/* Subtitle */
+.section-subtitle {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+/* View All Button */
+.view-all {
+    background: transparent;
+    border: 2px solid #4a8cff;
+    color: #4a8cff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.view-all:hover {
+    background: #4a8cff;
+    color: #0d0d0d;
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Blog Cards */
+.blog-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: left;
+    position: relative;
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px #4a8cff;
+}
+
+.blog-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.blog-description {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 10px 0;
+}
+
+/* Read More Link */
+.blog-link {
+    color: #4a8cff;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Blog Content Section */
+.blog-content {
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-post {
+    display: none; /* Hide all posts initially */
+    background: #1a1a1a;
+    padding: 20px;
+    max-width: 700px;
+    border-radius: 10px;
+    text-align: left;
+    transition: 0.3s;
+}

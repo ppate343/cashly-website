@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Section</title>
+    <link rel="stylesheet" href="blogs.css">
+</head>
+<body>
+    <nav>
+        <a href="#home">
+            <img class="nav-logo" src="./images/logo.png" alt="Cashly Logo" />
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Get Demo</a></li>
+        </ul>
+      </nav>
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Our <span>Blogs 📖</span></h2>
+            <p class="section-subtitle">Stay updated with the latest insights and stories.</p>
+            <button class="view-all">View All →</button>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <h3 class="blog-title">Tech Innovations</h3>
+                    <p class="blog-description">Exploring the latest in AI, software, and gadgets.</p>
+                    <a href="#" class="blog-link">Read More →</a>
+                </div>
+
+                <div class="blog-card">
+                    <h3 class="blog-title">Startup Insights</h3>
+                    <p class="blog-description">Lessons and strategies from successful entrepreneurs.</p>
+                    <a href="#" class="blog-link">Read More →</a>
+                </div>
+
+                <div class="blog-card">
+                    <h3 class="blog-title">UI/UX Trends</h3>
+                    <p class="blog-description">A deep dive into modern design patterns and dark mode aesthetics.</p>
+                    <a href="#" class="blog-link">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Blog Posts Section (Hidden by Default) -->
+    <section class="blog-content">
+        <div id="tech" class="blog-post">
+            <h2>Tech Innovations</h2>
+            <p>Exploring the latest in AI, software, and gadgets. We dive into how artificial intelligence is shaping industries and the tools you need to stay ahead.</p>
+        </div>
+
+        <div id="startup" class="blog-post">
+            <h2>Startup Insights</h2>
+            <p>Lessons and strategies from successful entrepreneurs. Learn how to navigate the startup ecosystem, secure funding, and scale your business effectively.</p>
+        </div>
+
+        <div id="uiux" class="blog-post">
+            <h2>UI/UX Trends</h2>
+            <p>A deep dive into modern design patterns and dark mode aesthetics. Discover what makes great user experiences and how to craft compelling UI designs.</p>
+        </div>
+    </section>
+
+    <script src="blogs.js"></script>
+</body>
+</html>

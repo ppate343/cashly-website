@@ -2,7 +2,7 @@
 body {
   margin: 0;
 
-  font-family: "Roboto", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 100;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -243,8 +243,8 @@ nav ul li a:active {
   animation-delay: 0.5s; /* Delays the animation to occur after the sliding text */
 }
 
-.pink {
-  color: white;
+.blue {
+  color: #4a8cff;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5vw;
@@ -301,20 +301,20 @@ nav ul li a:active {
 @media screen and (max-width: 768px) {
   .home-content {
     flex-direction: column-reverse;
-    gap: 3vh;
+    gap: 2vh;
     text-align: center;
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
   }
 
   .left {
-    max-width: 90vw;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 2vh;
+    gap: 1vh;
   }
   .slide-text-container {
     justify-content: center; /* Centers the sliding text */
@@ -700,7 +700,9 @@ nav ul li a:active {
 }
 
 .card-tech-stack p {
-  font-size: 30px;
+  font-weight: bold;
+  font-size: 25px;
+  opacity: 0.8;
   color: #003ba3;
   margin: 10px 0;
 }
@@ -742,7 +744,9 @@ nav ul li a:active {
 
 .card h3 {
   font-size: 30px;
-  color: rgba(0, 0, 0, 0.443);
+  font-weight: bold;
+  opacity: 0.5;
+  color: black;
   margin: 0%;
 }
 

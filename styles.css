@@ -18,6 +18,7 @@ html {
   overflow-x: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 /* Navigation Bar */
@@ -42,7 +43,7 @@ nav {
 }
 nav .logo {
   font-size: 15px;
-  color: blue;
+  color: #4a8cff;
 }
 
 nav ul {
@@ -56,7 +57,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: blue;
+  color: #4a8cff;
   transition: color 0.3s;
 }
 
@@ -72,7 +73,7 @@ nav ul li a:active {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: blue;
+  color: #003ba3;
   z-index: 1100;
   position: relative;
 }
@@ -174,7 +175,7 @@ nav ul li a:active {
 .slide-text-container {
   position: relative;
   height: 4rem; /* Reserves space for the sliding text */
-  margin-bottom: 2rem; /* Adds space between sliding text and the heading */
+  margin-bottom: 5rem; /* Adds space between sliding text and the heading */
   display: flex;
   justify-content: flex-start; /* Aligns the sliding text to the left */
   width: 100%;
@@ -274,29 +275,20 @@ nav ul li a:active {
   border: none;
   border-radius: 12px;
   background-color: white;
-  opacity: 0.8;
   color: BLACK;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .home-buttons button:hover {
-  background-color: blue;
+  background-color: #003ba3;
   color: white;
   transform: scale(1.05);
 }
 
 .home-content img {
   max-width: 50vw;
-  max-height: 50vh;
-  object-fit: contain;
-  border: 6px solid transparent;
-  background-color: white;
-  opacity: 0.6;
-  border-radius: 50%;
-  padding: 6px;
-  box-sizing: border-box;
-  box-shadow: 0 30px 50px rgba(19, 55, 255, 0.562);
+  max-height: 60vh;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -379,7 +371,7 @@ nav ul li a:active {
 #about h2 {
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 5vh;
-  color: blue;
+  color: #003ba3;
 }
 
 /* Flexbox for Layout Control */
@@ -387,7 +379,7 @@ nav ul li a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5vw;
+  gap: 1vw;
   text-align: left;
   flex-wrap: wrap;
   color: white;
@@ -407,14 +399,16 @@ nav ul li a:active {
   line-height: 1.6;
   max-width: 50vw;
   text-align: left;
-  color: blue;
+  color: #003ba3;
 }
 
 /* Strong Text Highlight */
 #about p strong {
-  color: blue;
+  color: #003ba3;
   font-weight: bold;
 }
+
+
 
 /* Responsive Design for Smaller Screens */
 @media screen and (max-width: 768px) {
@@ -438,7 +432,7 @@ nav ul li a:active {
 
 #experience {
   background-color: rgb(5, 0, 4);
-  color: blue;
+  color: #003ba3;
   padding: 50px 20px;
   text-align: center;
 }
@@ -498,14 +492,14 @@ nav ul li a:active {
   margin: 20px;
   border-radius: 2%;
   color: BLACK;
-  background: radial-gradient(square, blue, rgba(0, 0, 0, 0.8));
-  box-shadow: 0 0 20px 5px blue;
+  background: radial-gradient(square, #003ba3, rgba(0, 0, 0, 0.8));
+  box-shadow: 0 0 20px 5px #003ba3;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .timeline-content:hover {
   transform: scale(1.05); /* Slight zoom */
-  box-shadow: 0 0 40px 15px blue;
+  box-shadow: 0 0 40px 15px #003ba3;
 }
 
 .timeline ul li:nth-child(odd):before {
@@ -515,7 +509,7 @@ nav ul li a:active {
   height: 10px;
   top: 24px;
   right: -6px;
-  background: blue;
+  background: #003ba3;
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgba(42, 63, 255, 0.3);
 }
@@ -526,14 +520,14 @@ nav ul li a:active {
   height: 10px;
   top: 24px;
   left: -4px;
-  background: blue;
+  background: #003ba3;
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgba(42, 63, 255, 0.3);
 }
 .timeline ul li h3 {
   padding: 0;
   margin: 0;
-  color: blue;
+  color: #003ba3;
   font-weight: 600;
 }
 .timeline ul li p {
@@ -551,7 +545,7 @@ nav ul li a:active {
   right: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: blue;
+  background: #003ba3;
   color: #fff;
   border-radius: 18px;
   box-shadow: 0 0 0 3px rgba(42, 63, 255, 0.3);
@@ -562,7 +556,7 @@ nav ul li a:active {
   left: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: blue;
+  background: #003ba3;
   color: #fff;
   border-radius: 18px;
   box-shadow: 0 0 0 3px rgba(42, 63, 255, 0.3);
@@ -608,16 +602,16 @@ nav ul li a:active {
 /* Products Section */
 
 #products {
-  color: blue;
+  color: #003ba3;
   padding: 50px 20px;
   text-align: center;
   background-color: white;
 }
 
 #products h2 {
-  font-size: 36px;
+  font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 20px;
-  color: blue;
+  color: #003ba3;
 }
 
 #products .content {
@@ -706,9 +700,8 @@ nav ul li a:active {
 }
 
 .card-tech-stack p {
-  font-style: italic;
   font-size: 30px;
-  color: blue;
+  color: #003ba3;
   margin: 10px 0;
 }
 
@@ -750,7 +743,6 @@ nav ul li a:active {
 .card h3 {
   font-size: 30px;
   color: rgba(0, 0, 0, 0.443);
-  font-style: italic;
   margin: 0%;
 }
 
@@ -782,7 +774,7 @@ nav ul li a:active {
 
 #team {
   background-color: white;
-  color: blue;
+  color: #003ba3;
   padding: 50px 20px;
   text-align: center;
 }
@@ -856,62 +848,72 @@ nav ul li a:active {
 
 #customers {
   background-color: white;
-  color: blue;
+  color: #003ba3;
   padding: 50px 20px;
   text-align: center;
 }
 
 .customer-success h4 {
   font-size: 2.5vh;
-  color: blue;
+  color: #003ba3;
   margin-bottom: 2%;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.testimonial-wrapper {
+
+.ticker-container {
   width: 100%;
-  overflow: hidden; /* Hide items that are outside of the container */
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  padding: 20px 0;
 }
 
-.testimonial-container {
+.ticker {
   display: flex;
-  animation: slide-right 15s linear infinite; /* Controls the sliding effect */
+  width: max-content;
+  gap: 40px; /* Space between items */
+  opacity: 0;
+  transform: translateX(-100%);
 }
 
-.testimonial-item {
+.ticker-item {
   display: flex;
   align-items: center;
-  margin-right: 50px; /* Space between testimonial items */
-  min-width: 300px;
-  justify-content: flex-start;
+  background-color: #003ba3;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 300px; /* Wider items */
+  color: white;
 }
 
 .testimonial-logo {
-  width: 40px; /* Set size for logo */
-  margin-right: 20px; /* Space between logo and quote */
+  width: 50px;
+  height: 50px;
+  margin-right: 15px; /* Space between logo and text */
 }
 
 .testimonial-quote {
   font-size: 18px;
-  font-style: italic;
+  font-style:italic; 
+  white-space: nowrap;
 }
 
-/* Animation to move items from left to right and loop seamlessly */
-@keyframes slide-right {
-  0% {
-    transform: translateX(0); /* Start on screen */
+/* Animation */
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(-100%);
   }
-  33.33% {
-    transform: translateX(-33.33%); /* First item moves out */
+  to {
+    transform: translateX(100%);
   }
-  66.66% {
-    transform: translateX(-66.66%); /* Second item moves out */
-  }
-  100% {
-    transform: translateX(-100%); /* All items off-screen */
-  }
+}
+
+.ticker.active {
+  opacity: 1;
+  animation: ticker-scroll 10s linear infinite;
 }
 
 
@@ -919,7 +921,7 @@ nav ul li a:active {
 
 #contact-me {
   background-color: rgb(255, 255, 255);
-  color: blue;
+  color: #003ba3;
   padding: 50px 20px;
   text-align: center;
 }
@@ -963,7 +965,7 @@ nav ul li a:active {
 }
 
 .contact-form button {
-  background-color: blue;
+  background-color: #003ba3;
   /* blue button */
   color: white;
   border: none;
@@ -975,7 +977,7 @@ nav ul li a:active {
 }
 
 .contact-form button:hover {
-  background-color: #e6005c;
+  background-color: #4A8cff;
   /* Darker blue on hover */
 }
 
@@ -989,27 +991,58 @@ nav ul li a:active {
 
 .social-icons .icon {
   font-size: 40px;
-  color: blue;
+  color: #003ba3;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .social-icons .icon:hover {
-  color: #ff007f;
+  color: #4A8cff;
   /* blue hover effect */
 }
 
 /* Footer Styling */
 .footer {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 14px;
+  background-color: #000;
   color: #aaa;
+  text-align: center;
+  padding: 50px 20px;
 }
 
-.footer p {
-  margin: 0;
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.footer-section {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
 
 /* Splash Screen Styles */
 

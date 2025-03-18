@@ -123,6 +123,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
+    /*****************TICKER  ***********************/
+      const ticker = document.querySelector(".ticker");
+    
+      const observer2 = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              ticker.classList.add("active");
+            }
+          });
+        },
+        { threshold: 0.5 } // Trigger when 50% of the ticker is visible
+      );
+    
+      observer2.observe(ticker);
+  
     
 
     /*****************CONTACT FORM ***********************/

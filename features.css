@@ -20,6 +20,11 @@ nav {
   margin: auto;
 }
 
+.nav-logo {
+    width: 100px;
+    height: 100px;
+  }
+
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -43,7 +48,7 @@ nav ul li a {
 }
 
 .mortgage-ai {
-  background: linear-gradient(to right, black, #434343);
+  background: linear-gradient(to right, black, #242424);
 }
 
 .automations {
@@ -69,6 +74,7 @@ nav ul li a {
 .features {
   padding: 60px 20px;
   text-align: center;
+
 }
 
 .features h2 {

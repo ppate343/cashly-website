@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cashly Website</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -72,12 +72,9 @@
             <h2 class="sliding-text">REDUCE OVERHEAD</h2>
             <h2 class="sliding-text">CLOSE MORE DEALS</h2>
           </div>
-          <h3 class="home-desc">
+          <h3 class="home-desc blue">
             Empowering Mortgage Brokers with AI-Powered Automation and
             Performance Insights
-          </h3>
-          <h3 class="home-desc blue">
-            Mortgage AI | Automated Workflows | SMS Autopilot
           </h3>
 
           <div class="home-buttons">
@@ -111,8 +108,8 @@
           <strong>building relationships and closing more deals</strong>.
           <br /><br />
 
-          <em
-            >💡 Created by Mortgage Brokers, for Mortgage Brokers—transforming
+          💡<em
+            > Created by Mortgage Brokers, for Mortgage Brokers—transforming
             the way the industry operates.</em
           >
         </p>
@@ -129,7 +126,7 @@
             <div class="card-inner">
               <div class="card-front">
                 <div class="card-image">
-                  <img src="./images/projects/aurora.jpg" alt="Product 1" />
+                  <img src="images/features/mortgage-ai.png" alt="Product 1" />
                 </div>
                 <h3>Mortgage AI</h3>
                 <div class="card-tech-stack">
@@ -167,7 +164,7 @@
             <div class="card-inner">
               <div class="card-front">
                 <div class="card-image">
-                  <img src="./images/projects/arecipe.png" alt="Product  1" />
+                  <img src="./images/features/automations.png" alt="Product  1" />
                 </div>
                 <h3>Mortgage Automations</h3>
                 <div class="card-tech-stack">
@@ -203,7 +200,7 @@
             <div class="card-inner">
               <div class="card-front">
                 <div class="card-image">
-                  <img src="./images/about.png" alt="Product 1" />
+                  <img src="images/features/centralized.png" alt="Product 1" />
                 </div>
                 <h3>Cashy CRM</h3>
                 <div class="card-tech-stack">
@@ -246,55 +243,63 @@
 
       <div class="team-container">
         <div class="team-member">
-          <img src="team1.jpg" alt="Team Member 1" />
+          <img src="images/team/pavit.png" alt="Team Member 1" />
           <h3>Pavit Paul</h3>
           <p>CEO</p>
         </div>
         <div class="team-member">
-          <img src="team2.jpg" alt="Team Member 2" />
+          <img src="images/team/vlad.jpg" alt="Team Member 2" />
           <h3>Vladimir Belsch</h3>
-          <p>CTO</p>
+          <p>CTO & Operations Manager</p>
         </div>
         <div class="team-member">
-          <img src="team3.jpg" alt="Team Member 3" />
+          <img src="images/team/puja.png" alt="Team Member 3" />
           <h3>Puja Patel</h3>
-          <p>Product Manager</p>
+          <p>Product Manager & Software Engineer</p>
         </div>
         <div class="team-member">
-          <img src="team3.jpg" alt="Team Member 3" />
+          <img src="images/team/manav.png" alt="Team Member 3" />
           <h3>Manav Patel</h3>
           <p>Software Engineer ||</p>
         </div>
         <div class="team-member">
-          <img src="team3.jpg" alt="Team Member 3" />
+          <img src="images/team/shrey.png" alt="Team Member 3" />
           <h3>Shrey Patel</h3>
           <p>Software Engineer |</p>
         </div>
       </div>
-
-      <h2 class="customer-success float-up">Customer Testimonials</h2>
-
-      <div class="ticker-container">
-        <div class="ticker">
-          <div class="ticker-item">
-            <img src="logo1.png" alt="Logo 1" class="testimonial-logo" />
-            <p class="testimonial-quote">"Great service!"</p>
-          </div>
-          <div class="ticker-item">
-            <img src="logo2.png" alt="Logo 2" class="testimonial-logo" />
-            <p class="testimonial-quote">"Very easy to use!"</p>
-          </div>
-          <div class="ticker-item">
-            <img src="logo3.png" alt="Logo 3" class="testimonial-logo" />
-            <p class="testimonial-quote">"Helped us grow our business!"</p>
-          </div>
-        </div>
-      </div>
-      
     </section>
 
+
+    <section class="testimonials-section float-up">
+      <h2 class="customer-success">Customer Testimonials</h2>
+      <p class="subtitle">
+          Hear what our customers have to say about our services and their experiences.
+      </p>
+
+      <div class="testimonials-container">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+              <img src="images/customers/jk.png" alt="Julian Kwong" class="customer-img">
+              <h3 class="customer-name">Julian Kwong</h3>
+              <p class="testimonial-text">
+                  "The dashboards I work out of organizes my workflow better than any other system I have used before. It helps me get my work done faster which leaves me more time for me to give to my clients."
+              </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+              <img src="images/customers/uv.png" alt="Yuvraj Arora" class="customer-img">
+              <h3 class="customer-name">Yuvraj Arora</h3>
+              <p class="testimonial-text">
+                "Cashly’s AI Autopilot books consistent appointments and keeps my calendar full. It does the qualification from start to finish, making my job 10X easier."
+              </p>
+          </div>
+      </div>
+  </section>
+
     <section id="contact-me">
-      <h2 class="float-up">Get in touch</h2>
+      <h2 class="float-up">Get in Touch</h2>
       <div class="contact-form-container float-up">
         <form id="contactForm" method="post" class="contact-form">
           <label for="email">Email</label>
@@ -326,14 +331,14 @@
       <!-- Social Icons -->
       <div class="social-icons float-up">
         <a
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/company/gocashly"
           target="_blank"
           class="icon linkedin"
         >
           <i class="fab fa-linkedin"></i>
         </a>
 
-        <a href="gocashly.io" class="icon email">
+        <a href="operations@gocashly.io" class="icon email">
           <i class="fas fa-envelope"></i>
         </a>
       </div>
@@ -344,7 +349,7 @@
         <div class="footer-section">
           <h4>About Cashly</h4>
           <p>
-            Cashly is your trusted fintech partner, offering tailored ai workflows for your business operations.
+            Cashly is your trusted fintech partner, helping you discover your opportunities.
           </p>
         </div>
 
@@ -362,8 +367,8 @@
 
         <div class="footer-section">
           <h4>Follow Us</h4>
-          <a href="#">Facebook</a> | <a href="#">Twitter</a> |
-          <a href="#">LinkedIn</a>
+          <a href="#">Facebook</a> | <a href="#">Instagram</a> |
+          <a href="#https://www.linkedin.com/company/gocashly">LinkedIn</a>
         </div>
       </div>
 
@@ -372,10 +377,10 @@
       </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
     <script src="particles.js"></script>
   </body>
-  <button id="backToTop">↑ Back to Top</button>
+  <button id="backToTop">↑</button>
   <script>
     const backToTopButton = document.getElementById("backToTop");
 

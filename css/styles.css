@@ -1,7 +1,6 @@
 /* General Styles */
 body {
   margin: 0;
-
   font-family: 'Poppins', sans-serif;
   font-weight: 100;
   overflow-y: scroll;
@@ -175,7 +174,7 @@ nav ul li a:active {
 .slide-text-container {
   position: relative;
   height: 4rem; /* Reserves space for the sliding text */
-  margin-bottom: 5rem; /* Adds space between sliding text and the heading */
+  margin-bottom: 7rem; /* Adds space between sliding text and the heading */
   display: flex;
   justify-content: flex-start; /* Aligns the sliding text to the left */
   width: 100%;
@@ -270,8 +269,8 @@ nav ul li a:active {
 }
 
 .home-buttons button {
-  font-size: clamp(0.8rem, 1.5vw, 1.2rem); /* Reduced font size */
-  padding: clamp(8px, 1.5vw, 12px) clamp(15px, 3vw, 30px); /* Reduced padding */
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem); 
+  padding: clamp(8px, 1.5vw, 12px) clamp(15px, 3vw, 30px); 
   border: none;
   border-radius: 12px;
   background-color: white;
@@ -293,9 +292,8 @@ nav ul li a:active {
 }
 
 .home-content img:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-  opacity: 0.95;
+  transform: scale(1.05); 
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3); 
 }
 
 @media screen and (max-width: 768px) {
@@ -679,7 +677,7 @@ nav ul li a:active {
   align-items: center; /* Center horizontally */
 }
 .card-image {
-  width: 95%; /* Image covers 95% of the width */
+  width:90%; /* Image covers 95% of the width */
   height: 70%; /* Image covers 60% of the height */
   padding: 2%;
   box-sizing: border-box;
@@ -701,7 +699,7 @@ nav ul li a:active {
 
 .card-tech-stack p {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   opacity: 0.8;
   color: #003ba3;
   margin: 10px 0;
@@ -774,7 +772,7 @@ nav ul li a:active {
   }
 }
 
-/* Team/Customers Section */
+/* Team Section */
 
 #team {
   background-color: white;
@@ -800,7 +798,7 @@ nav ul li a:active {
 /* Team Grid (2x2 Layout) */
 .team-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-content: center;
   max-width: 600px;
@@ -818,8 +816,8 @@ nav ul li a:active {
 }
 
 .team-member img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
@@ -850,74 +848,62 @@ nav ul li a:active {
   }
 }
 
-#customers {
-  background-color: white;
-  color: #003ba3;
-  padding: 50px 20px;
+
+
+
+/* Testimonials Section */
+.testimonials-section {
   text-align: center;
-}
-
-.customer-success h4 {
-  font-size: 2.5vh;
+  padding: 50px 20px;
   color: #003ba3;
-  margin-bottom: 2%;
+}
+
+.customer-success {
+  font-size: 32px;
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
-
-.ticker-container {
-  width: 100%;
-  overflow: hidden;
-  background-color: white;
-  position: relative;
-  padding: 20px 0;
+.subtitle {
+  max-width: 600px;
+  margin: 10px auto 40px;
+  font-size: 16px;
 }
 
-.ticker {
+/* Testimonials Container */
+.testimonials-container {
   display: flex;
-  width: max-content;
-  gap: 40px; /* Space between items */
-  opacity: 0;
-  transform: translateX(-100%);
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.ticker-item {
-  display: flex;
-  align-items: center;
-  background-color: #003ba3;
+/* Testimonial Card */
+.testimonial-card {
+  background: #003ba3;
   padding: 20px;
   border-radius: 10px;
-  min-width: 300px; /* Wider items */
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-img {
+  width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.customer-name {
+  font-size: 18px;
+  font-weight: bold;
   color: white;
 }
 
-.testimonial-logo {
-  width: 50px;
-  height: 50px;
-  margin-right: 15px; /* Space between logo and text */
-}
-
-.testimonial-quote {
-  font-size: 18px;
-  font-style:italic; 
-  white-space: nowrap;
-}
-
-/* Animation */
-@keyframes ticker-scroll {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
-
-.ticker.active {
-  opacity: 1;
-  animation: ticker-scroll 10s linear infinite;
+.testimonial-text {
+  font-size: 14px;
+  font-style: italic;
+  color: #ffffff;
+  margin-top: 10px;
 }
 
 

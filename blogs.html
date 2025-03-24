@@ -1,68 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Section</title>
-    <link rel="stylesheet" href="blogs.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/blogs.css" />
+  </head>
+  <body>
     <nav>
-        <a href="#home">
-            <img class="nav-logo" src="./images/logo.png" alt="Cashly Logo" />
-        </a>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Get Demo</a></li>
-        </ul>
-      </nav>
+      <a href="#home">
+        <img class="nav-logo" src="./images/logo.png" alt="Cashly Logo" />
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Get Demo</a></li>
+      </ul>
+    </nav>
     <section class="blog-section">
-        <div class="container">
-            <h2 class="section-title">Our <span>Blogs 📖</span></h2>
-            <p class="section-subtitle">Stay updated with the latest insights and stories.</p>
-            <button class="view-all">View All →</button>
+      <div class="container">
+        <h2 class="section-title">Our <span>Blogs 📖</span></h2>
+        <p class="section-subtitle">
+          Stay updated with the latest insights and stories.
+        </p>
+        <!-- <button class="view-all" >View All →</button> -->
 
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <h3 class="blog-title">Tech Innovations</h3>
-                    <p class="blog-description">Exploring the latest in AI, software, and gadgets.</p>
-                    <a href="#" class="blog-link">Read More →</a>
-                </div>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <h3 class="blog-title">Traditional CRM vs Cashly</h3>
+            <p class="blog-description">
+                How Cashly Outperforms Traditional CRMs for Mortgage Brokerages
 
-                <div class="blog-card">
-                    <h3 class="blog-title">Startup Insights</h3>
-                    <p class="blog-description">Lessons and strategies from successful entrepreneurs.</p>
-                    <a href="#" class="blog-link">Read More →</a>
-                </div>
+            </p>
+            <a href="javascript:void(0)" class="blog-link" data-target="tech"
+              >Read More →</a
+            >
+          </div>
 
-                <div class="blog-card">
-                    <h3 class="blog-title">UI/UX Trends</h3>
-                    <p class="blog-description">A deep dive into modern design patterns and dark mode aesthetics.</p>
-                    <a href="#" class="blog-link">Read More →</a>
-                </div>
-            </div>
+          <div class="blog-card">
+            <h3 class="blog-title">AI in Mortgages</h3>
+            <p class="blog-description">
+                Mortgage-Specific Automation Reduces Manual Work
+            </p>
+            <a href="javascript:void(0)" class="blog-link" data-target="startup"
+              >Read More →</a
+            >
+          </div>
+
+          <div class="blog-card">
+            <h3 class="blog-title">Centralized Interaction</h3>
+            <p class="blog-description">
+                Unified Communications Centralize Client Interactions
+            </p>
+            <a href="javascript:void(0)" class="blog-link" data-target="uiux"
+              >Read More →</a
+            >
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- Blog Posts Section (Hidden by Default) -->
     <section class="blog-content">
-        <div id="tech" class="blog-post">
-            <h2>Tech Innovations</h2>
-            <p>Exploring the latest in AI, software, and gadgets. We dive into how artificial intelligence is shaping industries and the tools you need to stay ahead.</p>
-        </div>
+      <div id="tech" class="blog-post">
+        <h2>How Cashly Outperforms Traditional CRMs for Mortgage Brokerages</h2>
+        <p>
+          For high-performing mortgage brokerages, generic CRMs are a
+          bottleneck. <br /><br />
+          Traditional CRMs, designed for broad sales teams, lack the
+          industry-specific automation, compliance safeguards, and unified
+          systems that drive efficiency in mortgage lending. <br /><br />
+          Cashly bridges this gap, empowering agents like Julian Kwong, Yuvraj
+          Arora, and Anahat Virk to automate routine tasks, reduce risk, and
+          close more deals.
+        </p>
+        <button class="back-btn">← Close</button>
+      </div>
 
-        <div id="startup" class="blog-post">
-            <h2>Startup Insights</h2>
-            <p>Lessons and strategies from successful entrepreneurs. Learn how to navigate the startup ecosystem, secure funding, and scale your business effectively.</p>
-        </div>
+      <div id="startup" class="blog-post">
+        <h2>Mortgage-Specific Automation Reduces Manual Work</h2>
+        <p>
+          Traditional CRMs force agents to manually update fields, trigger
+          follow-ups, or compile lender summaries—tasks that drain time and
+          introduce errors. <br /><br />
+          Traditional CRMs rely on manual data entry and basic task reminders,
+          leaving agents to waste hours updating client statuses or compiling
+          lender summaries. <br /><br />
+          When agents receive borrower documents (e.g., tax returns or credit
+          reports), Cashly auto-populates fields, triggers personalized
+          email/SMS sequences, and generates lender-ready deal summaries in
+          seconds.
+          <br /><br />For Julian, this reduced follow-up delays by 40% and
+          ensured error-free submissions, accelerating lender approvals.
+        </p>
+        <button class="back-btn">← Close</button>
+      </div>
 
-        <div id="uiux" class="blog-post">
-            <h2>UI/UX Trends</h2>
-            <p>A deep dive into modern design patterns and dark mode aesthetics. Discover what makes great user experiences and how to craft compelling UI designs.</p>
-        </div>
+      <div id="uiux" class="blog-post">
+        <h2>Unified Communications Centralize Client Interactions</h2>
+        <p>
+          Generic CRMs often require complex integration setups to track lead
+          communications across all sources, such as calls, email, and social
+          media. Yuvraj Arora faced this issue daily, losing track of prospects
+          across platforms. 
+          <br /><br />With Cashly, he unified every touchpoint—Calls &
+          SMS, Email, Appointment Bookings—into a single timeline. Combined with
+          AI SMS Autopilot, which qualifies leads 24/7 and books appointments
+          directly into his calendar, Yuvraj boosted booked appointments by 50%
+          and increased daily client calls by 75%, all while maintaining full
+          context for every interaction.
+        </p>
+        <button class="back-btn">← Close</button>
+      </div>
     </section>
 
-    <script src="blogs.js"></script>
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all the Read More links
+        const readMoreLinks = document.querySelectorAll(".blog-link");
+
+        // Get all the blog posts
+        const blogPosts = document.querySelectorAll(".blog-post");
+
+        // Get all the Back buttons
+        const backBtns = document.querySelectorAll(".back-btn");
+
+        // Show the selected blog post when Read More is clicked
+        readMoreLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            const targetPostId = this.getAttribute("data-target");
+
+            // Hide all posts
+            blogPosts.forEach((post) => (post.style.display = "none"));
+
+            // Show the targeted post
+            document.getElementById(targetPostId).style.display = "block";
+          });
+        });
+
+        // Hide the post and return to blog list when Back is clicked
+        backBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            // Hide all posts and return to the blog section
+            blogPosts.forEach((post) => (post.style.display = "none"));
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
